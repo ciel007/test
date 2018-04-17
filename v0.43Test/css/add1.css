@@ -38,6 +38,7 @@ nav {
     text-transform: uppercase;  
     background-color: #222;
     font-size: large;
+	top: 0;
 }
 
 nav ul 
@@ -64,6 +65,11 @@ nav ul li a:hover
 {
     color: white;
 }
+
+footer div a :hover{color: white;}
+
+
+
 .current_page
 {
     background-color: black;
@@ -82,10 +88,6 @@ nav ul li a:hover
     display: inline;
     color: white;
 }
-#menu_button_wrapper
-{
-    display: none;
-}
 /* end nav style*/
 
 
@@ -102,55 +104,64 @@ body
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
-   
      background-repeat:no-repeat;
   }
-.loginbox
+.loginbox_center
 {
             background: white;
             opacity: 0.8;
             color: black;
-            margin-top: 15%;
-            left: 25%;
-            padding: 30px;
             box-shadow: 0 8px 50px -2px #000;
             border-radius:5px;
 }
-.loginbox_content
-{
-padding:5% 11% 5% 11%;
-}
-.singtext
+.form_email
 {
  font-family: Adobe Devanagari;
  font-size: large;
  color: dimgrey;
  float: right;
- padding-right: 25%;
+ padding-right: 35%;
 }
-.submit-btn
+
+.form-password
 {
+ font-family: Adobe Devanagari;
+ font-size: large;
+ color: dimgrey;
  float: right;
- margin-right: 28%;
+ padding-right: 35%;
 }
-.forgotpassword
+.login_buttons
 {
-padding-left: 10%;
+  float: 10%;
+  border-color:black;
+  color: #e9e3e3; 
+  font-size: medium;
+  border:1px solid #1d1c1d;
+  padding: 2% 8%;
+  opacity: 0.83;
+  background: black;
+  border-radius:5px;
+  table-layout: auto;
+	
 }
+
+a.login_buttons:link {color: #f8f8f7}
+a.login_buttons:visited {color: #f8f8f7 }
+a.login_buttons:hover {font-size: 120%;  text-decoration:blink;}
+
+
+
+
+
+
+
 .form-control{
     background-color: whitesmoke;
 }
 .input-group-sm{
     margin: 2%;
 }
-.submit-btn{
-   color: black; 
-   background-color: whitesmoke;
-   border: 1px solid #d6d2d4 ;
-   font-size: large;
-   font-family: Adobe Devanagari;
-}
-
 
 body div a
 {
@@ -189,33 +200,18 @@ div footer a:hover
     color: #ffffff;
 }
 
-#footer-block
-{
+#footer-block{
   background-color: #222222;
   margin: 0;
   width: 100%;
   max-width: device-width;
-  max-height: : device-height;
   bottom: 0;
   position: fixed;
   clear: both;
+  text-align: center;
   list-style-type: none;
 }
 /* end body */
-
-/*start responsive*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width:768px)and (min-device-width: 320px){
   nav ul li {
@@ -234,12 +230,7 @@ div footer a:hover
  nav{
      max-width: device-width;
      font-size: 65%;}
- }
-
-  }
-
-}
-
+ 
 
 @media (max-width:320px){
   nav ul li {
@@ -257,45 +248,4 @@ div footer a:hover
 
   }
 
-}
-
-@media (max-height:416px){
-
-.ext-center-loginbg{
-   margin-top: -0.8%;
-   max-height:70%;
-   margin: auto;
-}
-.loginbox{
-  max-height:75%;
-  font-size: 75%;
-  max-width: 75%;
-  max-height:10%;
-  margin: auto;
-  padding:2% 5% 5% 2%;
-}
-.loginbox_content{
-  max-height:75%;
-  font-size: 75%;
-  max-height:20%;
-  margin: auto;
-}
-.submit-btn{
-  max-height:75%;
-  font-size: 75%;
-  margin: auto;
-}
-.forgotpassword
-{
-  max-height:30%;
-}
-.form-control{
-  max-height:30%;
-}
-.input-group-sm{
-  margin: auto;
-  margin-bottom: -0.5%;
-  max-height:75%;
-  font-size: 75%;
-}
 }
