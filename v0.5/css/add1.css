@@ -38,6 +38,7 @@ nav {
     text-transform: uppercase;  
     background-color: #222;
     font-size: large;
+	top: 0;
 }
 
 nav ul 
@@ -64,6 +65,11 @@ nav ul li a:hover
 {
     color: white;
 }
+
+footer div a :hover{color: white;}
+
+
+
 .current_page
 {
     background-color: black;
@@ -82,12 +88,11 @@ nav ul li a:hover
     display: inline;
     color: white;
 }
-#menu_button_wrapper
-{
-    display: none;
-}
 /* end nav style*/
+
+
 /* start body */
+
 body
   {  
      overflow: hidden;
@@ -101,78 +106,97 @@ body
      -o-background-size: cover;
      background-repeat:no-repeat;
   }
-
-
-
-
-.rebg{
-        background-image: url(../pic/BK.jpg);
-        background-repeat:no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        }
-.regisbox{
+.loginbox_center
+{
             background: white;
             opacity: 0.8;
             color: black;
-            margin-top: 15%;
-            margin-bottom:15%;
-            left: 25%;
-            right: : 25%;
-            padding: 20px 20px;
             box-shadow: 0 8px 50px -2px #000;
             border-radius:5px;
-            width: : 50%
-        }
-.divspace{
-            margin:6%;
-        }
-
-.row-text-center{
-
-  font-size: 200%
+}
+.form_email
+{
+ font-family: Adobe Devanagari;
+ font-size: large;
+ color: dimgrey;
+ 
+ padding-right: 35%;
 }
 
-.singtext{
-  color:black; font-size: 190%
+.form-password
+{
+ font-family: Adobe Devanagari;
+ font-size: large;
+ color: dimgrey;
+
+ padding-right: 35%;
 }
+.login_buttons
+{
+  float: 10%;
+  border-color:black;
+  color: #e9e3e3; 
+  font-size: medium;
+  border:1px solid #1d1c1d;
+  padding: 2% 8%;
+  opacity: 0.83;
+  background: black;
+  border-radius:5px;
+  table-layout: auto;
+	
+}
+
+a.login_buttons:link {color: #f8f8f7}
+a.login_buttons:visited {color: #f8f8f7 }
+a.login_buttons:hover {font-size: 120%;  text-decoration:blink;}
+
+
+
+
+
+
 
 .form-control{
-  background-color: whitesmoke;
+    background-color: whitesmoke;
+}
+.input-group-sm{
+    margin: 2%;
 }
 
-.text-center{
-  margin-top: 20%
+body div a
+{
+    color: #272822;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em;
+    box-sizing: border-box;
 }
-
-.btn-btn-default-submit-btn{
-   border-color:black;
-   color: #e9e3e3; 
-   font-size: large;
-   border:1px solid #1d1c1d;
-   padding: 1px 8px 1px 8px;
-   opacity: 0.83;
-   background: black;
-   border-radius: 5px;
-   text-shadow: -0px 0.5px 0.5px #fbfafa;      
+body div a:hover
+{
+    color: #272822;
 }
-a.btn-btn-default-submit-btn:link {color: #f8f8f7}
-a.btn-btn-default-submit-btn:visited {color: #f8f8f7 }
-a.btn-btn-default-submit-btn:hover {font-size: 120%;  text-decoration:blink;}
-
-.sing-text{
-   left: 25%;
+body div a
+{
+    color: #272822;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em;
+    box-sizing: border-box;
 }
-
-  div footer a {
+body div a:hover
+{
+    color: #272822;
+}
+div footer a
+{
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
     padding: 0.5em;
     box-sizing: border-box;
  }
-
- div footer a:hover {
+div footer a:hover
+{
     color: #ffffff;
 }
 
@@ -188,48 +212,6 @@ a.btn-btn-default-submit-btn:hover {font-size: 120%;  text-decoration:blink;}
   list-style-type: none;
 }
 /* end body */
-
-/*start responsive*/
-@media (min-width:1024px){
-    .container-text-center{
-      max-width: device-width;
-      width: 70%;
-      padding: 10% 10% 10% 10%;
-    }
-    }
-
-@media (min-width:768px){
-    .container-text-center{
-      max-width: device-width;
-      width: 70%;
-      padding: 10% 30% 10% 10%;
-    }
-
-    }
-
-@media (min-width:1366px){
-    .container-text-center{
-      max-width: device-width;
-      width: 70%;
-      padding: 10% 20% 15% 12%;
-    }
- 
-    }
-
-@media (max-height: :416px){
-    .container-text-center{
-      max-height:75%;
-     font-size: 75%;
-     max-height:20%;
-     margin: auto;
-    }
-    .btn-btn-default-submit-btn{
-      max-height:35%;
-      margin: auto;
-}
-
-    }
-
 
 @media (max-width:768px)and (min-device-width: 320px){
   nav ul li {
@@ -248,12 +230,7 @@ a.btn-btn-default-submit-btn:hover {font-size: 120%;  text-decoration:blink;}
  nav{
      max-width: device-width;
      font-size: 65%;}
- }
-
-  }
-
-}
-
+ 
 
 @media (max-width:320px){
   nav ul li {
