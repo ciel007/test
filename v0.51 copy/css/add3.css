@@ -29,10 +29,9 @@ header {
     margin: 0;
 }
 
-.clearfix {
-    clear: both;
-}
+
 nav {
+	margin-bottom: 0;
     font-family: Adobe Devanagari;
     text-align: right;
     text-transform: uppercase;  
@@ -95,8 +94,7 @@ footer div a :hover{color: white;}
 
 body
   {  
-     overflow: hidden;
-     position: fixed;
+     
      width:100%;
      height:100%;
      background: url(../pic/BK.jpg) no-repeat center fixed;
@@ -106,7 +104,7 @@ body
      -o-background-size: cover;
      background-repeat:no-repeat;
   }
-.loginbox_center
+.resignterbox_center
 {
             background: white;
             opacity: 0.8;
@@ -114,31 +112,14 @@ body
             box-shadow: 0 8px 50px -2px #000;
             border-radius:5px;
 }
-.form_email
-{
- font-family: Adobe Devanagari;
- font-size: large;
- color: dimgrey;
- float: right;
- padding-right: 35%;
-}
 
-.form-password
-{
- font-family: Adobe Devanagari;
- font-size: large;
- color: dimgrey;
- float: right;
- padding-right: 35%;
-}
-.login_buttons
+.send_buttons
 {
   float: 10%;
   border-color:black;
   color: #e9e3e3; 
   font-size: medium;
-  border:1px solid #1d1c1d;
-  padding: 2% 8%;
+  border:2px solid #1d1c1d;
   opacity: 0.83;
   background: black;
   border-radius:5px;
@@ -146,22 +127,6 @@ body
 	
 }
 
-a.login_buttons:link {color: #f8f8f7}
-a.login_buttons:visited {color: #f8f8f7 }
-a.login_buttons:hover {font-size: 120%;  text-decoration:blink;}
-
-
-
-
-
-
-
-.form-control{
-    background-color: whitesmoke;
-}
-.input-group-sm{
-    margin: 2%;
-}
 
 body div a
 {
@@ -248,4 +213,52 @@ div footer a:hover
 
   }
 
+}
+
+
+
+.level1 {
+	color: white ;
+	background:black;
+    opacity: 0.8;
+	box-shadow: 0 8px 50px -2px #000;
+	
+}
+
+.btn {
+	color: white;
+	background:black ;
+    opacity: 0.8;
+	
+		
+}
+
+
+
+.text-uppercase {
+	font-family:  Times, "Times New Roman", "serif";
+	font-size: large;
+	
+}
+
+.clearfix {
+	        background: white;
+            opacity: 0.8;
+            color: black;
+            padding: 20px;
+            box-shadow: 0 8px 50px -2px #000;
+            border-radius:5px;
+}
+
+.btn-large {
+	background:white;
+}
+
+#floor_pic {
+	        background:#f2f3f3;
+	        opacity:no;
+            color: black;
+            padding: 20px;
+            box-shadow: 9px 8px 80px -9px #000;
+            border-radius:30px;
 }
